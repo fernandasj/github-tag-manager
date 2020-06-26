@@ -28,12 +28,12 @@ class RepositorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = github.Repository
-        fields = ('id_repository','name', 'descriptition', 'tags', 'user')
+        fields = ('id_repository','name', 'description', 'tags', 'user')
 
 
 class CreateRepositorySerializer(serializers.ModelSerializer):
     
     class Meta:
         model = github.Repository
-        fields = ('id_repository','name', 'descriptition', 'tags', 'user')
+        fields = ('id_repository','name', 'description', 'tags', 'user')
 

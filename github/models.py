@@ -42,6 +42,7 @@ class Repository(models.Model):
 
     tags = models.ManyToManyField(
         Tag,
+        blank=True,
         verbose_name='tag',
         related_name='repositories',
     )
